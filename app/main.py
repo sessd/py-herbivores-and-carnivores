@@ -24,6 +24,11 @@ class Animal:
                 f"Hidden: {self.hidden}}}")
 
 
+    @classmethod
+    def show_alive(cls) -> List["Animal"]:
+        return cls.alive
+
+
 class Herbivore(Animal):
 
     def hide(self) -> None:
